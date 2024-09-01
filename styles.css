@@ -485,12 +485,12 @@ footer {
     text-align: center;
     padding: 20px;
     width: 100%;
-    font-weight: 300; /* Ajuste o peso da fonte para menos negrito */
+    font-weight: 50;
+    /* Ajuste o peso da fonte para menos negrito */
     /* Outras propriedades podem ser ajustadas conforme necessário */
 }
 
 .social-icon {
-    text-decoration: none; /* Remove o sublinhado dos links */
     margin: 0 10px;
     color: #FE59BB;
     font-size: 24px;
@@ -499,8 +499,9 @@ footer {
 }
 
 .social-icon:hover {
-    text-decoration: none; /* Remove o sublinhado dos links */
     color: #ffffff;
+    text-decoration: none;
+    /* Remove o sublinhado */
 }
 
 .name {
@@ -515,6 +516,20 @@ footer {
     text-decoration: none;
 }
 
+/* Estilo responsivo para ícones sociais */
+@media (max-width: 768px) {
+    .social-icon {
+        font-size: 1.2em;
+        /* Diminuído o tamanho dos ícones em telas menores */
+    }
+}
+
+@media (max-width: 480px) {
+    .social-icon {
+        font-size: 1em;
+        /* Diminuído ainda mais o tamanho dos ícones em telas muito pequenas */
+    }
+}
 /* Estilo da seção de introdução */
 .introducao-secao {
     padding: 20px;
